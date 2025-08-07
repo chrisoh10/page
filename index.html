@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neurucare - 자연이 주는 아름다움</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-brown': '#8B4513',
+                        'light-brown': '#D2B48C',
+                        'cream': '#F5F5DC',
+                        'dark-brown': '#654321',
+                        'accent-gold': '#DAA520',
+                        'text-dark': '#3E2723',
+                        'text-light': '#8D6E63'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream">
+    <!-- Header -->
+    <header id="header" class="navbar bg-white shadow-lg sticky top-0 z-50">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="#brand-story" class="text-text-dark hover:text-primary-brown">브랜드 스토리</a></li>
+                    <li><a href="#products" class="text-text-dark hover:text-primary-brown">제품</a></li>
+                    <li><a href="#philosophy" class="text-text-dark hover:text-primary-brown">케어 철학</a></li>
+                    <li><a href="#contact" class="text-text-dark hover:text-primary-brown">문의</a></li>
+                    <li><a href="login.html" class="text-text-dark hover:text-primary-brown">로그인</a></li>
+                    <li><a href="signup.html" class="text-text-dark hover:text-primary-brown">회원가입</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl font-bold text-primary-brown">neurucare</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#brand-story" class="text-text-dark hover:text-primary-brown">브랜드 스토리</a></li>
+                <li><a href="#products" class="text-text-dark hover:text-primary-brown">제품</a></li>
+                <li><a href="#philosophy" class="text-text-dark hover:text-primary-brown">케어 철학</a></li>
+                <li><a href="#contact" class="text-text-dark hover:text-primary-brown">문의</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="hidden lg:flex gap-2 mr-4">
+                <a href="login.html" class="btn btn-ghost btn-sm text-text-dark hover:text-primary-brown">로그인</a>
+                <a href="signup.html" class="btn btn-outline btn-sm border-primary-brown text-primary-brown hover:bg-primary-brown hover:text-white">회원가입</a>
+            </div>
+            <button class="btn btn-outline btn-sm border-primary-brown text-primary-brown hover:bg-primary-brown hover:text-white">
+                온라인 쇼핑몰
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero min-h-screen bg-gradient-to-br from-light-brown to-cream relative overflow-hidden">
+        <div class="hero-content text-center">
+            <div class="max-w-4xl">
+                <div class="hero-animation opacity-0 transform translate-y-10">
+                    <h1 class="text-5xl lg:text-7xl font-bold text-text-dark mb-6 leading-tight">
+                        자연이 주는
+                        <span class="text-primary-brown block">아름다움</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-text-light mb-8 max-w-2xl mx-auto leading-relaxed">
+                        40-50대 여성을 위한 프리미엄 오가닉 스킨케어<br>
+                        자연의 힘으로 건강하고 빛나는 피부를 선사합니다
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="btn btn-lg bg-primary-brown text-white hover:bg-dark-brown border-none px-8">
+                            제품 둘러보기
+                        </button>
+                        <button class="btn btn-lg btn-outline border-primary-brown text-primary-brown hover:bg-primary-brown hover:text-white px-8">
+                            브랜드 스토리
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-primary-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section id="brand-story" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-text-dark mb-6">브랜드 스토리</h2>
+                <p class="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
+                    neurucare는 자연의 순수함과 과학적 연구가 만나 탄생한 프리미엄 스킨케어 브랜드입니다.
+                    40-50대 여성의 피부 특성을 깊이 이해하고, 건강하고 아름다운 피부를 위한 솔루션을 제공합니다.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 min-h-fit">
+                <div class="card bg-cream shadow-xl brand-card opacity-0 transform translate-y-10 h-auto">
+                    <div class="card-body text-center p-6">
+                        <div class="w-16 h-16 bg-primary-brown rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-text-dark justify-center mb-3 text-xl">자연 성분</h3>
+                        <p class="text-text-light leading-relaxed">엄선된 천연 오가닉 성분으로 피부에 순수한 영양을 전달합니다</p>
+                    </div>
+                </div>
+
+                <div class="card bg-cream shadow-xl brand-card opacity-0 transform translate-y-10 h-auto">
+                    <div class="card-body text-center p-6">
+                        <div class="w-16 h-16 bg-primary-brown rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-text-dark justify-center mb-3 text-xl">과학적 연구</h3>
+                        <p class="text-text-light leading-relaxed">첨단 기술과 연구를 통해 검증된 효과적인 스킨케어 솔루션</p>
+                    </div>
+                </div>
+
+                <div class="card bg-cream shadow-xl brand-card opacity-0 transform translate-y-10 h-auto">
+                    <div class="card-body text-center p-6">
+                        <div class="w-16 h-16 bg-primary-brown rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title text-text-dark justify-center mb-3 text-xl">맞춤 케어</h3>
+                        <p class="text-text-light leading-relaxed">40-50대 여성의 피부 특성에 최적화된 개인 맞춤형 케어</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Highlight Section -->
+    <section id="products" class="py-20 bg-gradient-to-br from-cream to-light-brown">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-text-dark mb-6">주요 제품</h2>
+                <p class="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
+                    40-50대 여성의 피부 고민을 해결하는 프리미엄 스킨케어 라인업
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="card bg-white shadow-xl product-card opacity-0 transform translate-y-10 hover:shadow-2xl transition-all duration-300">
+                    <figure class="px-6 pt-6">
+                        <div class="w-full h-48 bg-gradient-to-br from-light-brown to-cream rounded-xl flex items-center justify-center">
+                            <div class="text-6xl text-primary-brown">🧴</div>
+                        </div>
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-text-dark">하이드라 에센스</h3>
+                        <p class="text-text-light">히알루론산과 천연 보습 성분으로 깊은 수분 공급</p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="badge badge-outline text-xs">보습</span>
+                            <span class="badge badge-outline text-xs">탄력</span>
+                            <span class="badge badge-outline text-xs">진정</span>
+                        </div>
+                        <div class="card-actions justify-between items-center">
+                            <span class="text-2xl font-bold text-primary-brown">89,000원</span>
+                            <button class="btn btn-sm bg-primary-brown text-white hover:bg-dark-brown border-none" onclick="showProductModal('product1')">
+                                자세히 보기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card bg-white shadow-xl product-card opacity-0 transform translate-y-10 hover:shadow-2xl transition-all duration-300">
+                    <figure class="px-6 pt-6">
+                        <div class="w-full h-48 bg-gradient-to-br from-light-brown to-cream rounded-xl flex items-center justify-center">
+                            <div class="text-6xl text-primary-brown">🫙</div>
+                        </div>
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-text-dark">리뉴얼 크림</h3>
+                        <p class="text-text-light">콜라겐과 펩타이드로 주름 개선과 탄력 증진</p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="badge badge-outline text-xs">주름개선</span>
+                            <span class="badge badge-outline text-xs">탄력</span>
+                            <span class="badge badge-outline text-xs">영양</span>
+                        </div>
+                        <div class="card-actions justify-between items-center">
+                            <span class="text-2xl font-bold text-primary-brown">125,000원</span>
+                            <button class="btn btn-sm bg-primary-brown text-white hover:bg-dark-brown border-none" onclick="showProductModal('product2')">
+                                자세히 보기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card bg-white shadow-xl product-card opacity-0 transform translate-y-10 hover:shadow-2xl transition-all duration-300">
+                    <figure class="px-6 pt-6">
+                        <div class="w-full h-48 bg-gradient-to-br from-light-brown to-cream rounded-xl flex items-center justify-center">
+                            <div class="text-6xl text-primary-brown">✨</div>
+                        </div>
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-text-dark">브라이트닝 세럼</h3>
+                        <p class="text-text-light">글루타치온과 비타민C로 기미, 잡티 집중 케어</p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="badge badge-outline text-xs">미백</span>
+                            <span class="badge badge-outline text-xs">기미개선</span>
+                            <span class="badge badge-outline text-xs">브라이트닝</span>
+                        </div>
+                        <div class="card-actions justify-between items-center">
+                            <span class="text-2xl font-bold text-primary-brown">98,000원</span>
+                            <button class="btn btn-sm bg-primary-brown text-white hover:bg-dark-brown border-none" onclick="showProductModal('product3')">
+                                자세히 보기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-text-dark mb-6">케어 철학</h2>
+                <p class="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
+                    neurucare만의 특별한 스킨케어 철학으로 건강하고 아름다운 피부를 만들어갑니다
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="philosophy-content opacity-0 transform translate-x-10">
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-brown rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-text-dark mb-2">슬로우 에이징</h3>
+                                <p class="text-text-light">급격한 변화보다는 자연스럽고 건강한 노화 과정을 지원합니다</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-brown rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-text-dark mb-2">예방적 케어</h3>
+                                <p class="text-text-light">문제가 생기기 전 미리 예방하는 것이 가장 효과적인 케어입니다</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-brown rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-text-dark mb-2">개인 맞춤</h3>
+                                <p class="text-text-light">각자의 피부 타입과 고민에 맞는 개별화된 솔루션을 제공합니다</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-brown rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">4</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-text-dark mb-2">지속 가능성</h3>
+                                <p class="text-text-light">환경을 생각하는 지속 가능한 뷰티를 추구합니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="philosophy-image opacity-0 transform translate-x-10">
+                    <div class="bg-gradient-to-br from-light-brown to-cream rounded-2xl p-8 h-96 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-8xl text-primary-brown mb-4">🌿</div>
+                            <h3 class="text-2xl font-bold text-text-dark mb-2">자연과 과학의 조화</h3>
+                            <p class="text-text-light">순수한 자연 성분과 첨단 과학 기술의 완벽한 만남</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-dark-brown text-white">
+        <aside>
+            <div class="text-3xl font-bold mb-4">neurucare</div>
+            <p class="text-lg mb-4">자연이 주는 아름다움</p>
+            <p class="max-w-md">
+                40-50대 여성을 위한 프리미엄 오가닉 스킨케어 브랜드<br>
+                자연의 힘으로 더 건강하고 빛나는 당신을 만나보세요
+            </p>
+        </aside>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <a class="link link-hover">브랜드 스토리</a>
+                <a class="link link-hover">제품</a>
+                <a class="link link-hover">케어 철학</a>
+                <a class="link link-hover">고객센터</a>
+            </div>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-6">
+                <!-- 카카오톡 -->
+                <a href="#" class="text-3xl hover:text-accent-gold transition-colors duration-300" title="카카오톡">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 3C8.832 3 3 7.744 3 13.5c0 3.744 2.4 7.056 6 8.832L8.4 26.4c-.096.192-.048.432.144.528.096.048.192.048.288 0L13.2 24c.912.096 1.824.144 2.8.144 7.168 0 13-4.744 13-10.644S23.168 3 16 3z"/>
+                    </svg>
+                </a>
+                <!-- 인스타그램 -->
+                <a href="#" class="text-3xl hover:text-accent-gold transition-colors duration-300" title="인스타그램">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2.88c4.275 0 4.781.016 6.469.094 1.563.069 2.406.331 2.969.55.744.288 1.281.631 1.838 1.188.563.563.9 1.094 1.188 1.838.219.563.481 1.406.55 2.969.078 1.688.094 2.194.094 6.469s-.016 4.781-.094 6.469c-.069 1.563-.331 2.406-.55 2.969-.288.744-.631 1.281-1.188 1.838-.563.563-1.094.9-1.838 1.188-.563.219-1.406.481-2.969.55-1.688.078-2.194.094-6.469.094s-4.781-.016-6.469-.094c-1.563-.069-2.406-.331-2.969-.55-.744-.288-1.281-.631-1.838-1.188-.563-.563-.9-1.094-1.188-1.838-.219-.563-.481-1.406-.55-2.969C2.896 20.781 2.88 20.275 2.88 16s.016-4.781.094-6.469c.069-1.563.331-2.406.55-2.969.288-.744.631-1.281 1.188-1.838.563-.563 1.094-.9 1.838-1.188.563-.219 1.406-.481 2.969-.55C11.219 2.896 11.725 2.88 16 2.88M16 0C11.656 0 11.112.019 9.406.094 7.706.175 6.506.444 5.456.838c-1.081.419-2 .981-2.919 1.9-.919.919-1.481 1.838-1.9 2.919C.163 6.706-.106 7.906-.025 9.606.05 11.312.069 11.856.069 16.2s.019 4.888.094 6.594c.081 1.7.35 2.9.744 3.95.419 1.081.981 2 1.9 2.919.919.919 1.838 1.481 2.919 1.9 1.05.394 2.25.663 3.95.744 1.706.075 2.25.094 6.594.094s4.888-.019 6.594-.094c1.7-.081 2.9-.35 3.95-.744 1.081-.419 2-.981 2.919-1.9.919-.919 1.481-1.838 1.9-2.919.394-1.05.663-2.25.744-3.95.075-1.706.094-2.25.094-6.594s-.019-4.888-.094-6.594c-.081-1.7-.35-2.9-.744-3.95-.419-1.081-.981-2-1.9-2.919-.919-.919-1.838-1.481-2.919-1.9-1.05-.394-2.25-.663-3.95-.744C20.888.019 20.344 0 16 0z"/>
+                        <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219S20.537 7.781 16 7.781zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331S13.056 10.669 16 10.669s5.331 2.387 5.331 5.331S18.944 21.331 16 21.331z"/>
+                        <circle cx="24.538" cy="7.462" r="1.919"/>
+                    </svg>
+                </a>
+                <!-- 이메일 -->
+                <a href="mailto:contact@neurucare.com" class="text-3xl hover:text-accent-gold transition-colors duration-300" title="이메일">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M28 6H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h24c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM4 8h24v2.4L16 18 4 10.4V8zm0 16V12.8l12 7.2 12-7.2V24H4z"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <aside>
+            <p>Copyright © 2024 - neurucare. All rights reserved.</p>
+        </aside>
+    </footer>
+
+    <!-- Product Modal -->
+    <dialog id="product_modal" class="modal">
+        <div class="modal-box w-11/12 max-w-2xl">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <div id="modal-content">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
